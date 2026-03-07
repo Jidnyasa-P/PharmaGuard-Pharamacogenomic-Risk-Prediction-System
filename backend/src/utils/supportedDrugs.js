@@ -1,10 +1,15 @@
-const supportedDrugs = [
+/**
+ * supportedDrugs.js
+ * List of pharmacogenomically supported drugs with CPIC guidelines.
+ */
+
+const SUPPORTED_DRUGS = [
   "CODEINE",
   "WARFARIN",
   "CLOPIDOGREL",
   "SIMVASTATIN",
   "AZATHIOPRINE",
-  "FLUOROURACIL"
+  "FLUOROURACIL",
 ];
 
-module.exports = supportedDrugs;
+module.exports = SUPPORTED_DRUGS;

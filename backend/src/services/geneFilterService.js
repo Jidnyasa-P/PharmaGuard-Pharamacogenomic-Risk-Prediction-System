@@ -1,21 +1,22 @@
-const supportedGenes = require("../utils/supportedGenes");
+/**
+ * geneFilterService.js
+ * Takes an array of variant objects and returns a deduplicated list of
+ * pharmacogenomically relevant gene names found in the VCF.
+ */
 
-const geneFilter = (variants) => {
+const SUPPORTED_GENES = ["CYP2D6", "CYP2C19", "CYP2C9", "SLCO1B1", "TPMT", "DPYD"];
 
-  const detectedGenes = [];
+function filterGenes(variants) {
+  const geneSet = new Set();
 
-  variants.forEach(variant => {
-
-    if (supportedGenes[variant.rsid]) {
-
-      detectedGenes.push(supportedGenes[variant.rsid]);
-
+  for (const variant of variants) {
+    if (variant.gene && SUPPORTED_GENES.includes(variant.gene)) {
+      geneSet.add(variant.gene);
     }
+  }
 
-  });
+  // Return in canonical order
+  return SUPPORTED_GENES.filter(g => geneSet.has(g));
+}
 
-  return [...new Set(detectedGenes)];
-
-};
-
-module.exports = geneFilter;
+module.exports = filterGenes;

@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pharmaguard
+    env: node
+    buildCommand: cd ../Frontend && npm install && npm run build && mkdir -p ../backend/dist && cp -r dist ../backend/dist && cd ../backend && npm install
+    startCommand: node src/server.js
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: PORT
+        value: 10000
