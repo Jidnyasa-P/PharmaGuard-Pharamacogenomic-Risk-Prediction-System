@@ -7,8 +7,6 @@
 🎥 **Demo Video:** 
 [Click to Watch](https://drive.google.com/file/d/1NAB_OSuL_1cgS4Zwk2kczQjk_WV1f1tK/view?usp=drivesdk) 
 
-Built for the **RIFT 2026 Hackathon — Pharmacogenomics / Explainable AI Track**
-
 ---
 
 ## 🚀 The Vision
@@ -366,11 +364,7 @@ Move healthcare from reactive treatment → predictive precision medicine.
 
 ## 👥 Team & Roles
 
-Jidnyasa Patil-AI/ML Engineer, 
-
-Asmi Tatawar-Frontend Developer, 
-
-Swarada Deshpande-Backend Developer
+Jidnyasa Patil-AI/ML Engineer
 
 ---
 
