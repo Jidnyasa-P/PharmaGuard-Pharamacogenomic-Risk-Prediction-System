@@ -7,7 +7,6 @@ import AnalysisPage from './views/AnalysisPage';
 import ResultsPage from './views/ResultsPage';
 import HistoryPage from './views/HistoryPage';
 import SettingsPage from './views/SettingsPage';
-import ROICalculatorPage from './views/ROICalculatorPage';
 import Layout from './components/Layout';
 import { User, SystemSettings, Notification } from './types';
 
@@ -144,21 +143,6 @@ const App: React.FC = () => {
                 settings={settings} 
                 onUpdateSettings={updateSettings} 
               />
-            </Layout>
-          ) : <Navigate to="/login" />} 
-        />
-        <Route 
-          path="/roi" 
-          element={user ? (
-            <Layout 
-              user={user} 
-              onLogout={handleLogout} 
-              searchTerm={searchTerm} 
-              setSearchTerm={setSearchTerm}
-              notifications={notifications}
-              onMarkRead={markNotificationsRead}
-            >
-              <ROICalculatorPage />
             </Layout>
           ) : <Navigate to="/login" />} 
         />
