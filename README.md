@@ -5,7 +5,10 @@
 🌐 **Live Application:** [https://pharmaguard-eslt.onrender.com](https://pharmaguard-eslt.onrender.com)
 
 🎥 **Demo Video:** 
-[Click to Watch](https://drive.google.com/file/d/1NAB_OSuL_1cgS4Zwk2kczQjk_WV1f1tK/view?usp=drivesdk) 
+[Click to Watch](https://drive.google.com/file/d/1dTk36R3gz6vR01VNWuAxCoVprO1jkSkx/view?usp=drivesdk) 
+
+🎥 **Pitch Video:** 
+[Click to Watch](https://drive.google.com/file/d/1hDpvcYwqrhaPCTaPCQtIbkRmm42COv0S/view?usp=drivesdk) 
 
 ---
 
